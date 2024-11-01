@@ -1,0 +1,29 @@
+
+$primary: #4234db ;
+$secondary: rgb(10, 47, 210);
+$success: #d2ee9f;
+$info: #afafe8;
+$warning: #f8e288; 
+$danger: #ad00a8; 
+$light:#ecf0f1; 
+$dark: #222; 
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --success: #{$success};
+  --info:#{$info};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --light: #{$light};
+  --dark: #{$dark};
+}
+
+$body-color:$light;
+$body-bg: $dark;
+
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 1rem;
+
+@import "~bootstrap/scss/bootstrap";
+
