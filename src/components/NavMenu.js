@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavMenu.scss";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import logo from "../images/logo.svg";
 
 function NavMenu() {
   //navbar extended or not
@@ -15,10 +16,16 @@ function NavMenu() {
     <Navbar expanded={expanded} onToggle={setExpanded} expand="lg">
       <Container>
         <Navbar.Brand as={NavLink} to="/" onClick={closeNavbar}>
-          Min Logotyp
+          <img
+            id="logo"
+            src={logo}
+            alt="Till startsida för Relaxguiden"
+           
+          />
+        
         </Navbar.Brand>
 
-        <Navbar.Toggle 
+        <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={() => setExpanded((expanded) => !expanded)}
         />

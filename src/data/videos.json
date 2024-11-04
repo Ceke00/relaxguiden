@@ -1,0 +1,164 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "En enkel övning som lugnar och får dig att landa i kroppen",
+      "link": "https://www.youtube.com/watch?v=qLMmmpnuIF0",
+      "author": "Yoga med Helen",
+      "length": "10:27",
+      "category": "yoga",
+      "language": "sv",
+      "description": "Det här är en skön och enkel övning som hjälper dig att få ett lugn och landa i kroppen. En rogivande övning som lugnar ditt nervsystem. Den är lånad från Peter Levine som bla har skrivit boken Walking the tiger- healing the trauma."
+    },
+    {
+      "id": "2",
+      "title": "Avslappningsövning vid smärta",
+      "link": "https://www.youtube.com/watch?v=dshgrtuICjA",
+      "author": "Yoga med Helen",
+      "length": "12:52",
+      "category": "relax",
+      "language": "sv",
+      "description": "Avslappningsövning vid smärta."
+    },
+    {
+      "id": "3",
+      "title": "Mantra Music: Ong Namo",
+      "link": "https://www.youtube.com/watch?v=c1XCS0g6J4A",
+      "author": "Snatam Kaur",
+      "length": "13:00",
+      "category": "music",
+      "language": "en",
+      "description": "Ong Namo -I bow to the subtle divine wisdom Guru Dev Namo - I bow to the divine teacher within."
+    },
+    {
+      "id": "4",
+      "title": "Mul Mantra - Ek Ong Kar",
+      "link": "https://www.youtube.com/watch?v=Pf8CeGa7tII",
+      "author": "Snatam Kaur",
+      "length": "11:18",
+      "category": "music",
+      "language": "en",
+      "description": "Sikhism, one of the world's youngest major religions, was founded in the late 15th century in the Punjab region of South Asia by Guru Nanak Dev Ji. It is a monotheistic faith that emphasizes devotion to one God, equality of all people, and the importance of living a truthful and honest life. Sikhs follow the teachings of ten Gurus, with Guru Nanak Dev Ji being the first and Guru Gobind Singh Ji being the last. The holy scripture, Guru Granth Sahib Ji, is regarded as the eternal Guru and the ultimate spiritual guide for Sikhs."
+    },
+    {
+      "id": "5",
+      "title": "Aad Guray Nameh",
+      "link": "https://www.youtube.com/watch?v=8BSKPele2Vo",
+      "author": "Snatam Kaur",
+      "length": "10:40",
+      "category": "music",
+      "language": "en",
+      "description": "Aad Guray Nameh, Jugaad Guray Nameh, Sat Guray Nameh, Siri Guroo Dayvay Nameh. Is the Mangala Charn Mantra, and is chanted for protection. It surrounds the magnetic field with protective light."
+    },
+    {
+      "id": "6",
+      "title": "Long Time Sun",
+      "link": "https://www.youtube.com/watch?v=lZ5v_118NUc",
+      "author": "Snatam Kaur",
+      "length": "9:13",
+      "category": "music",
+      "language": "en",
+      "description": "Sikhism, one of the world's youngest major religions, was founded in the late 15th century in the Punjab region of South Asia by Guru Nanak Dev Ji. It is a monotheistic faith that emphasizes devotion to one God, equality of all people, and the importance of living a truthful and honest life. Sikhs follow the teachings of ten Gurus, with Guru Nanak Dev Ji being the first and Guru Gobind Singh Ji being the last. The holy scripture, Guru Granth Sahib Ji, is regarded as the eternal Guru and the ultimate spiritual guide for Sikhs."
+    },
+    {
+      "id": "7",
+      "title": "Guidad avslappning vid stress",
+      "link": "https://www.youtube.com/watch?v=3U_l1-Rszhs&list=PLOgopcixVYVAlmKJFVIheRsoVS7BPpCpo",
+      "author": "Emma Öström",
+      "length": "19:42",
+      "category": "relax",
+      "language": "sv",
+      "description": "Den här guidade avslappningen kan du göra när som helst du behöver. Den hjälper dig att släppa stress, oro och spänningar i kroppen."
+    },
+    {
+      "id": "8",
+      "title": "Guided Meditation - Blissful Deep Relaxation",
+      "link": "https://www.youtube.com/watch?v=Jyy0ra2WcQQ",
+      "author": "The Honest Guys - Meditations - Relaxation",
+      "length": "18:36",
+      "category": "meditation",
+      "language": "en",
+      "description": "This guided meditation will gently ease you into a state of blissfully deep relaxation."
+    },
+    {
+      "id": "9",
+      "title": "En guidad sittande avspänningsövning ",
+      "link": "https://www.youtube.com/watch?v=VySXX6FA8EM",
+      "author": "Gunnel Saric ",
+      "length": "5:57",
+      "category": "relax",
+      "language": "sv",
+      "description": "En guidad sittande avspänningsövning"
+    },
+    {
+      "id": "10",
+      "title": "20 minute yoga nidra - reset your nervous system",
+      "link": "https://www.youtube.com/watch?v=9r8jXUvsi3w",
+      "author": "Ally Boothroyd",
+      "length": "20:36",
+      "category": "meditation",
+      "language": "en",
+      "description": "Yoga Nidra is a guided meditation that uses a systematic method of inducing complete physical, mental and emotional relaxation. This yogic sleep technique calms the nervous system and activate the parasympathetic (relaxation, rest & digest) response. "
+    },
+    {
+      "id": "11",
+      "title": "Avspänning Ljusa stunder",
+      "link": "https://www.youtube.com/watch?v=kcTRBSkpTTY",
+      "author": "Katrin Hilding",
+      "length": "9:00",
+      "category": "relax",
+      "language": "sv",
+      "description": "En vägledd muskulär avspänning från Ljusa stunder - Katrin Hilding www.ljusastunder.se"
+    },
+    {
+      "id": "12",
+      "title": "Muskulär Avslappning Avspänning - Mental Träning",
+      "link": "https://www.youtube.com/watch?v=ft0GKLNBMyo",
+      "author": "Lars-Eric Uneståhl",
+      "length": "14:56",
+      "category": "relax",
+      "language": "sv",
+      "description": "Muskulär Avslappning - Lars-Eric Uneståhl - Avspänning - Mental Träning"
+    },
+    {
+      "id": "13",
+      "title": "Mental Avslappning - Avspänning - Mental Träning",
+      "link": "https://www.youtube.com/watch?v=0OOLpNIA0zA",
+      "author": "Lars-Eric Uneståhl",
+      "length": "14:46",
+      "category": "relax",
+      "language": "sv",
+      "description": "Mental Avslappning - Lars-Eric Uneståhl - Avspänning - Mental Träning"
+    },
+    {
+      "id": "14",
+      "title": "Progressiv meditation",
+      "link": "https://www.youtube.com/watch?v=1MClU4CydPA",
+      "author": "SDF Askim Frölunda Högsbo",
+      "length": "17:35",
+      "category": "relax",
+      "language": "sv",
+      "description": "Progressiv meditation"
+    },
+    {
+      "id": "15",
+      "title": "A 15 minute neurosensory exercise to pause and de-stress",
+      "link": "https://www.youtube.com/watch?v=RoPOmAb108w",
+      "author": "Irene Lyon",
+      "length": "15:57",
+      "category": "relax",
+      "language": "en",
+      "description": "I recorded this sampler to give the audience a taste of what it means to be embodied from a more biological and neuro-sensory level. To become embodied from a BIOLOGICAL point of view is essential for living a life that is honest and human, imo. This is by no means the entire recipe for healing trauma and restoring nervous system health, but it is a way to start and I hope you take 15 minutes out of your busy life to give this a try. Please leave a comment below afterwards! "
+    },
+    {
+      "id": "16",
+      "title": "Sittande paus 7 min guidad mindfulness",
+      "link": "https://www.youtube.com/watch?v=aTJ_pZfqMX4",
+      "author": "Anneli Godman",
+      "length": "7:13",
+      "category": "meditation",
+      "language": "sv",
+      "description": "Träna mindfulness med Anneli Godman, utbildad i MBSR och skapare av Mental Ergonomi, som hjälper dig att använda din hjärna klokt i vardagen. Öva upp ditt uppmärksamhetskapital genom att fokusera. Här bjuder Anneli på en guidad mindfulnessövning på 7 minuter som det går lätt att göra plats för i vardagen. "
+    }
+  ]
+}

@@ -10,19 +10,21 @@ import {
 } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import NavMenu from "./components/NavMenu";
-
 import "./custom.scss";
+import videoData from "./data/videos.json";
 
 function App() {
+
   return (
     <Router>
       <NavMenu />
 
-      <Container>
+      <Container className="mt-5">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/videolist" element={<VideoList />} />
+          <Route path="/videolist" element={<VideoList videos={videoData.videos} />} />
+         
         </Routes>
       </Container>
     </Router>

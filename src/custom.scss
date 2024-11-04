@@ -1,28 +1,49 @@
+@font-face {
+  font-family: "Nearo";
+  src: url("./fonts/nearomedium-z86vl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 $primary: #4234db ;
+$primary-subtle:#afafe8;
 $secondary: rgb(10, 47, 210);
-$success: #d2ee9f;
-$info: #afafe8;
+$secondary-subtle:rgb(164, 179, 247);
+$success: #167308;
+$success-subtle:#d2ee9f;
+$info: #108387;
+$info-subtle: #a5f5f7;
 $warning: #f8e288; 
 $danger: #ad00a8; 
+$danger-subtle: #efb0ed; 
 $light:#ecf0f1; 
 $dark: #222; 
 
+
+
 :root {
   --primary: #{$primary};
+  --primary-subtle:#($primary-subtle);
   --secondary: #{$secondary};
+   --secondary-subtle: #{$secondary-subtle};
   --success: #{$success};
+  --success-subtle: #{$success-subtle};
   --info:#{$info};
+  --info-subtle:#{$info-subtle};
   --warning: #{$warning};
   --danger: #{$danger};
+  --danger-subtle: #{$danger-subtle};
   --light: #{$light};
   --dark: #{$dark};
+  
 }
 
 $body-color:$light;
 $body-bg: $dark;
 
-$font-family-base: 'Arial', sans-serif;
+$font-family-base: 'Quicksand', sans-serif;
+$headings-font-family: 'Quicksand', sans-serif;
 $font-size-base: 1rem;
 
 @import "~bootstrap/scss/bootstrap";
