@@ -14,15 +14,9 @@ function NavMenu() {
   };
   return (
     <Navbar expanded={expanded} onToggle={setExpanded} expand="lg">
-      <Container>
+      <Container className="mb-5">
         <Navbar.Brand as={NavLink} to="/" onClick={closeNavbar}>
-          <img
-            id="logo"
-            src={logo}
-            alt="Till startsida för Relaxguiden"
-           
-          />
-        
+          <img id="logo" src={logo} alt="Till startsida för Relaxguiden" />
         </Navbar.Brand>
 
         <Navbar.Toggle
@@ -43,6 +37,16 @@ function NavMenu() {
             </Nav.Link>
             <Nav.Link
               as={NavLink}
+              to="/videotips"
+              onClick={closeNavbar}
+              className={({ isActive }) =>
+                isActive ? "active nav-link" : "nav-link"
+              }
+            >
+              Videotips
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
               to="/about"
               onClick={closeNavbar}
               className={({ isActive }) =>
@@ -50,16 +54,6 @@ function NavMenu() {
               }
             >
               Om
-            </Nav.Link>
-            <Nav.Link
-              as={NavLink}
-              to="/videolist"
-              onClick={closeNavbar}
-              className={({ isActive }) =>
-                isActive ? "active nav-link" : "nav-link"
-              }
-            >
-              Videotips
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
