@@ -1,2 +1,5 @@
 body{
-    background: linear-gradient(65deg, var(--primary) 0%, var(--dark) 100%);}
+    background: linear-gradient(65deg, var(--primary) 0%, var(--dark) 75%);
+    
+}
+p{font-size:1.07rem; line-height: 1.5;}

@@ -3,14 +3,13 @@
   border-width: 2px !important;
   border-color: var(--secondary-subtle) !important;
   text-align:left;
+  
 
   &:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
   }
-
-
 }
 .category-icon-container {
   padding: 1rem;
@@ -23,3 +22,5 @@
   outline: 2px var(--warning) solid !important;
   outline-offset: 5px; 
 }
+
+.intro{max-width: 65ch;}

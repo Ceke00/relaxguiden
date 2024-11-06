@@ -100,10 +100,9 @@ const VideoList = ({ videos }) => {
 
   return (
     <div>
-      <div className="mb-5">
+      <div className="mb-5 intro">
         <h1>Videotips</h1>
-        <p>Behöver du en paus?</p>
-        <p> Här kan du filtrea fram den typ av återhämtning som passar dig just nu.</p>
+        <p>Behöver du en paus? Här kan du filtrera fram den typ av återhämtning som passar dig just nu. Relax!</p>
       </div>
       <Filter
         categories={categories}
@@ -114,13 +113,15 @@ const VideoList = ({ videos }) => {
         onFilterChange={handleFilterChange}
         onResetFilters={handleResetFilters}
       />
+
+      {filteredVideos.length===0?(<p className="text-warning mt-4 fw-medium fs-5">Inga matchande viedeor hittades. Justera filtren!</p>):(
       <Row xs={1} md={2} lg={3} className="g-4 mt-2">
         {filteredVideos.map((video) => (
           <Col key={video.id}>
             <VideoCard video={video} onClick={() => openFirstModal(video)} />
           </Col>
         ))}
-      </Row>
+      </Row>)}
 
       {/* backdrop makes click outside modal, close modal */}
       <Modal

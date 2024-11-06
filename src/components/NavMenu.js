@@ -14,7 +14,7 @@ function NavMenu() {
   };
   return (
     <Navbar expanded={expanded} onToggle={setExpanded} expand="lg">
-      <Container className="mb-5">
+      <Container className="mb-5 mt-3">
         <Navbar.Brand as={NavLink} to="/" onClick={closeNavbar}>
           <img id="logo" src={logo} alt="Till startsida för Relaxguiden" />
         </Navbar.Brand>

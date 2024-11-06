@@ -14,7 +14,7 @@ function About() {
               <source srcSet={meditation_big} media="(min-width: 1200px)" />
               <img
                 src={meditation_small}
-                alt="Relaxing scene"
+                alt="Figur mediterar bredvid lotusblomma"
                 className="img-fluid"
               />
             </picture>
@@ -27,7 +27,7 @@ function About() {
             <div>
               <h1>Om Relaxguiden</h1>
               <p>
-                Syftet med Relaxguiden är att göra det enkelt att hitta bra videor för avslappning. I en stressig vardag är det viktigt att kunna ta en paus och slappna
+                Syftet med Relaxguiden är att göra det enkelt att hitta bra videor för återhämtning. I en stressig vardag är det viktigt att kunna ta en paus och slappna
                 av för att förbättra både mental och fysisk hälsa.
               </p>
               <p>

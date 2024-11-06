@@ -14,7 +14,7 @@ function Home() {
               <source srcSet={relax_big} media="(min-width: 1200px)" />
               <img
                 src={relax_small}
-                alt="Relaxing scene"
+                alt="Avlsappnad figur med lotusblomma i knäet"
                 className="img-fluid"
               />
             </picture>

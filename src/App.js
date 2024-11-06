@@ -9,11 +9,12 @@ import "./custom.scss";
 import videoData from "./data/videos.json";
 import Footer from "./components/Footer";
 import ErrorMessage from "./components/ErrorMessage";
+import ScrollToTop from "./components/ScrollToTop";
+
 function App() {
-
-
   return (
     <Router>
+      <ScrollToTop />
       <NavMenu />
 
       <Container className="my-5">
