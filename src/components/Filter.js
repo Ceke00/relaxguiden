@@ -10,6 +10,7 @@ const Filter = ({
   onFilterChange,
   onResetFilters,
 }) => {
+  //sending type and value to handleFilterChange in VideoList
   const handleCategoryChange = (category) => {
     onFilterChange("categories", category);
   };
@@ -33,8 +34,13 @@ const Filter = ({
           className="d-flex flex-column align-self-end"
         >
           <Form.Group>
-            <Form.Label className="fw-semibold" htmlFor="category-select">Kategori</Form.Label>
-            <div id="category-select" className="category-buttons gap-2 d-flex flex-wrap">
+            <Form.Label className="fw-semibold" htmlFor="category-select">
+              Kategori
+            </Form.Label>
+            <div
+              id="category-select"
+              className="category-buttons gap-2 d-flex flex-wrap"
+            >
               {categories.map((category) => (
                 <Button
                   key={category.value}
@@ -45,7 +51,6 @@ const Filter = ({
                   }
                   active={selectedCategories.includes(category.value)}
                   onClick={() => handleCategoryChange(category.value)}
-                 
                 >
                   {category.label}
                 </Button>
@@ -55,7 +60,9 @@ const Filter = ({
         </Col>
         <Col lg={2} md={3} sm={4} xs={12} className="d-flex flex-column">
           <Form.Group>
-            <Form.Label className="fw-semibold" htmlFor="time-select">Tid</Form.Label>
+            <Form.Label className="fw-semibold" htmlFor="time-select">
+              Tid
+            </Form.Label>
             <Form.Select
               id="time-select"
               value={selectedTime}
@@ -72,7 +79,9 @@ const Filter = ({
         </Col>
         <Col lg={2} md={3} sm={4} xs={12} className="d-flex flex-column">
           <Form.Group>
-            <Form.Label className="fw-semibold" htmlFor="language-select">Språk</Form.Label>
+            <Form.Label className="fw-semibold" htmlFor="language-select">
+              Språk
+            </Form.Label>
             <Form.Select
               id="language-select"
               value={selectedLanguage}

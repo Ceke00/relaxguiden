@@ -7,11 +7,10 @@ import { Helmet } from "react-helmet";
 
 function About() {
   return (
-  
     <>
-    <Helmet>
+      <Helmet>
         <title>Om Relaxguiden</title>
-    </Helmet>
+      </Helmet>
       <Container>
         <Row className="align-items-center gap-3">
           <Col xs={12} md={6} className="text-center">
@@ -32,8 +31,10 @@ function About() {
             <div>
               <h1>Om Relaxguiden</h1>
               <p>
-                Syftet med Relaxguiden är att göra det enkelt att hitta bra videor för återhämtning. I en stressig vardag är det viktigt att kunna ta en paus och slappna
-                av för att förbättra både mental och fysisk hälsa.
+                Syftet med Relaxguiden är att göra det enkelt att hitta bra
+                videor för återhämtning. I en stressig vardag är det viktigt att
+                kunna ta en paus och slappna av för att förbättra både mental
+                och fysisk hälsa.
               </p>
               <p>
                 Med Relaxguiden kan du enkelt filtrera och hitta gratis

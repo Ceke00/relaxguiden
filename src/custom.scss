@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Nearo";
-  src: url("./fonts/nearomedium-z86vl.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 $primary: #5626aa ;
@@ -19,8 +13,6 @@ $danger: #8e0189;
 $danger-subtle: #efb0ed; 
 $light:#f7f8f8;
 $dark: #222; 
-
-
 
 :root {
   --primary: #{$primary};

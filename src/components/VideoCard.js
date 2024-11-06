@@ -3,11 +3,12 @@ import { Card, Button } from "react-bootstrap";
 import { PiFlowerLotus } from "react-icons/pi";
 import { GrYoga } from "react-icons/gr";
 import { TbUserPause } from "react-icons/tb";
-import "./VideoList.scss";
+import "./VideoCard.scss";
 import { GiMeditation } from "react-icons/gi";
 import { IoMdMusicalNotes } from "react-icons/io";
 
 const VideoCard = ({ video, onClick }) => {
+  //get icon according to category
   const getCategoryIcon = (category) => {
     switch (category) {
       case "music":
@@ -22,7 +23,7 @@ const VideoCard = ({ video, onClick }) => {
         return <TbUserPause className="category-icon" />;
     }
   };
-
+  //get color according to category
   const getCategoryColor = (category) => {
     switch (category) {
       case "music":

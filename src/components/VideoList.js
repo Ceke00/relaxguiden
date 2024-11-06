@@ -17,26 +17,28 @@ const VideoList = ({ videos }) => {
   const [selectedTime, setSelectedTime] = useState("all");
   const [selectedLanguage, setSelectedLanguage] = useState("all");
 
+  //Selects video and opens first modal
   const openFirstModal = (video) => {
     setSelectedVideo(video);
     setShowFirstModal(true);
   };
-
+  //Closing first modal
   const closeFirstModal = () => {
     setShowFirstModal(false);
   };
-
+  //Closes first modal and opens second modal
   const openSecondModal = () => {
     setShowFirstModal(false);
     setShowSecondModal(true);
   };
-
+  //Closing second modal
   const closeSecondModal = () => {
     setShowSecondModal(false);
   };
 
   // Handle filter changes
   const handleFilterChange = (type, value) => {
+    //If category already selected->now deselected
     if (type === "categories") {
       setSelectedCategories((prev) =>
         prev.includes(value)
@@ -57,7 +59,7 @@ const VideoList = ({ videos }) => {
     setSelectedLanguage("all");
   };
 
-  // Filter videos based on selected filters
+  // Filter videos based on selected filters, updates on every change in the filter
   useEffect(() => {
     let filtered = videos;
 
@@ -83,7 +85,7 @@ const VideoList = ({ videos }) => {
         (video) => video.language === selectedLanguage
       );
     }
-
+    //saving new list of filtered videos
     setFilteredVideos(filtered);
   }, [videos, selectedCategories, selectedTime, selectedLanguage]);
 

@@ -1,26 +1,8 @@
-.video-card {
-  border-style: solid !important;
-  border-width: 2px !important;
-  border-color: var(--secondary-subtle) !important;
-  text-align:left;
-  
-
-  &:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-  }
-}
-.category-icon-container {
-  padding: 1rem;
-}
-.category-icon {
-  font-size: 2rem;
-}
-
 .button-focus:focus {
   outline: 2px var(--warning) solid !important;
-  outline-offset: 5px; 
+  outline-offset: 5px;
 }
 
-.intro{max-width: 65ch;}
+.intro {
+  max-width: 65ch;
+}

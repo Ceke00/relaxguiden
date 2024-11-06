@@ -1,9 +1,9 @@
-import React from 'react';
-import { Container, Col, Row} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import relax_small from '../images/relaxing_384.webp'; 
-import relax_big from '../images/relaxing_512.webp'; 
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import relax_small from "../images/relaxing_384.webp";
+import relax_big from "../images/relaxing_512.webp";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (

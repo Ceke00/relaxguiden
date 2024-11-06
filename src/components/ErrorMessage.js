@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./ErrorMessage.scss"
-import Helmet from 'react-helmet';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./ErrorMessage.scss";
+import Helmet from "react-helmet";
 
 function ErrorMessage() {
   return (
@@ -20,4 +20,4 @@ function ErrorMessage() {
   );
 }
 
-export default ErrorMessage
+export default ErrorMessage;
