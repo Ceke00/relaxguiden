@@ -154,7 +154,7 @@ const VideoList = ({ videos }) => {
         </Modal.Header>
         <Modal.Body>
           <p>Längd: {selectedVideo?.length}</p>
-          <p>Beskrivning: {selectedVideo?.description}</p>
+          <p>{selectedVideo?.description}</p>
           <Button onClick={openSecondModal} className="button-focus">
             Se video
           </Button>
