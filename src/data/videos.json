@@ -96,7 +96,7 @@
       "link": "https://www.youtube.com/watch?v=9r8jXUvsi3w",
       "author": "Ally Boothroyd",
       "length": "20:36",
-      "category": "meditation",
+      "category": "relax",
       "language": "en",
       "description": "Yoga Nidra is a guided meditation that uses a systematic method of inducing complete physical, mental and emotional relaxation. This yogic sleep technique calms the nervous system and activate the parasympathetic (relaxation, rest & digest) response. "
     },
@@ -159,6 +159,116 @@
       "category": "meditation",
       "language": "sv",
       "description": "Träna mindfulness med Anneli Godman, utbildad i MBSR och skapare av Mental Ergonomi, som hjälper dig att använda din hjärna klokt i vardagen. Öva upp ditt uppmärksamhetskapital genom att fokusera. Här bjuder Anneli på en guidad mindfulnessövning på 7 minuter som det går lätt att göra plats för i vardagen. "
+    },
+    {
+      "id": "17",
+      "title": "Stressad (3 minuter guidad meditation för stress)",
+      "link": "https://www.youtube.com/watch?v=U8Bzvr8nkow",
+      "author": "Mindfully",
+      "length": "3:00",
+      "category": "meditation",
+      "language": "sv",
+      "description": "Meditation och mindfulness på svenska. Det här är en kort guidad meditation för stress. När du är stressad ger meditation som mest. I den här meditationen låter vi de stressiga tankarna vara för en stund, för att istället komma med vår fulla uppmärksamhet till nuet. "
+    },
+    {
+      "id": "18",
+      "title": "Medkänsla & kärlek (5 minuter guidad meditation)",
+      "link": "https://www.youtube.com/watch?v=wN2gcpz_l9E",
+      "author": "Mindfully",
+      "length": "5:00",
+      "category": "meditation",
+      "language": "sv",
+      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation för att öva du upp din förmåga att vara vänlig, kärleksfull och medkännande mot din bästa vän, dig själv och hela världen. Den här tekniken kallas även metta-meditation. "
+    },
+    {
+      "id": "19",
+      "title": "Godnatt (10 minuter guidad meditation när du ska sova)",
+      "link": "https://www.youtube.com/watch?v=vZ3mnkTex_Q",
+      "author": "Mindfully",
+      "length": "10:00",
+      "category": "meditation",
+      "language": "sv",
+      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation för innan du ska sova som är 10 minuter. Meditation kan hjälpa dig att släppa taget om det som har varit så att du kan somna fortare och vakna upp utvilad. "
+    },
+    {
+      "id": "20",
+      "title": "Fokusera (5 minuter guidad meditation)",
+      "link": "https://www.youtube.com/watch?v=xCaFVCsNS3E",
+      "author": "Mindfully",
+      "length": "5:00",
+      "category": "meditation",
+      "language": "sv",
+      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation som stärker din koncentrationsförmåga så att du kan fokusera längre och på rätt saker."
+    },
+    {
+      "id": "21",
+      "title": "Acceptans (10 minuter guidad meditation)",
+      "link": "https://www.youtube.com/watch?v=d3FXV2RaXJQ",
+      "author": "Mindfully",
+      "length": "10:00",
+      "category": "meditation",
+      "language": "sv",
+      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation som är 10 minuter. Acceptans är en förutsättning för att vi ska kunna vara närvarande. Det innebär inte att vi blir passiva, det betyder bara att vi inte är emot det som redan är. Tillåt dig själv att släppa dina förväntningar, dina krav, dina måsten och borden och bara slappna av i nuet, precis som det är. "
+    },
+    {
+      "id": "22",
+      "title": "Basal kroppskännedom liggande 1",
+      "link": "https://www.youtube.com/watch?v=M0M_v-Oxoqk",
+      "author": "Martina Strand",
+      "length": "7:01",
+      "category": "relax",
+      "language": "sv",
+      "description": "Inspelningarna är tänkta som ett komplement och hjälpmedel för studieledare av Ljuscirkeln eller vem som helst som vill göra övningarna på egen hand."
+    },
+    {
+      "id": "23",
+      "title": "Vacker Pianomusik, Vol. 3 ~ Avslappnande Musik för Studier, Sömn eller Avkoppling",
+      "link": "https://www.youtube.com/watch?v=-b4BjxrIp8o",
+      "author": "Peder B. Helland",
+      "length": "53:54",
+      "category": "music",
+      "language": "sv",
+      "description": "Vacker pianomusik komponerad av Peder B. Helland. Avslappnande musik som kan användas som bakgrundsmusik för arbete, studier, meditation, sömn, läsning, koncentration, fokus, spa eller yoga."
+    },
+    {
+      "id": "24",
+      "title": "Porlande Blommig Bäck med Härlig Fågelsång - Avslappnande Naturljud",
+      "link": "https://www.youtube.com/watch?v=EFO6LOGQ0ik",
+      "author": "Northern Nature Guy",
+      "length": "60:54",
+      "category": "music",
+      "language": "sv",
+      "description": "Porlande blommig bäck med härlig fågelsång är en avslappnande naturvideo  med gula blommor vid sidan av bäcken som sakta rinner förbi. Kan passa bra när du vill koppla av, lindra oro, fokusera, läsa, djupandas m.m."
+    },
+    {
+      "id": "25",
+      "title": "Nadi Shodana (växelvis andning)",
+      "link": "https://www.youtube.com/watch?v=tmFmUSZAj5g",
+      "author": "Yogobe",
+      "length": "2:18",
+      "category": "yoga",
+      "language": "en",
+      "description": "Nadi är de kanaler av energi som finns i vår kropp. Det finns flera nadis men de tre främsta kanalerna är Ida, Pingala och Sushumna. Dessa tre har sitt ursprung vid början av vår ryggrad, vid vårt första chakra, Ida på vänster sida, Pingala på höger och Sushumna är den centrala nadin. De reser sig via ryggraden, Sushumna strålar ut genom toppen av huvudet via vårt sista chakra. Ida och Pingala tar sig ut vi vardera näsborre. Shodana betyder därför rening. Så nadi shodana översätts ungefär till att rensa kanalerna, syftet är att syresätta kroppen och lugna andetaget vilket kan sänka stresspåslag."
+    },
+    {
+      "id": "26",
+      "title": "Brahmari - the humming bee breath",
+      "link": "https://www.youtube.com/watch?v=nzG27n1rsus",
+      "author": "Yogobe",
+      "length": "3:33",
+      "category": "yoga",
+      "language": "en",
+      "description": "Brahmari – the humming bee breath (with Eleonora Ramsby Hererra via YOGOBE). This exercise is appropriate for beginners, as there is no breath retention, an alternation between nostrils, or counting of breaths. The practitioner goes at their own pace. The sound makes it easier to give the practitioner something to focus on and they can further assess their breathing more easily by evaluating the quality and evenness of the sound.."
+    },
+    {
+      "id": "27",
+      "title": "SAVASANA / YOGA NIDRA I med Ulrica Norberg",
+      "link": "https://www.youtube.com/watch?v=2zMshE5LK7w",
+      "author": "Yogobe",
+      "length": "14:58",
+      "category": "relax",
+      "language": "sv",
+      "description": "Testa en gratis Yoga Nidra-klass med Ulrica Norberg för att ge dig själv en aktiv återhämtning. Yoga Nidra passar bra när som helst under dagen, för att få ny energi, eller inför sömnen."
     }
   ]
 }
