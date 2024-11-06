@@ -3,10 +3,14 @@ import { Container, Col, Row} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import relax_small from '../images/relaxing_384.webp'; 
 import relax_big from '../images/relaxing_512.webp'; 
+import { Helmet } from 'react-helmet';
 
 function Home() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Startsida Relaxguiden</title>
+      </Helmet>
       <Container>
         <Row className="align-items-center gap-3">
           <Col xs={12} md={6} className="text-center">
@@ -40,7 +44,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </>
   );
 }
 

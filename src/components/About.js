@@ -3,10 +3,15 @@ import { Container, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import meditation_small from "../images/meditation_384.webp";
 import meditation_big from "../images/meditation_512.webp";
+import { Helmet } from "react-helmet";
 
 function About() {
   return (
-    <div>
+  
+    <>
+    <Helmet>
+        <title>Om Relaxguiden</title>
+    </Helmet>
       <Container>
         <Row className="align-items-center gap-3">
           <Col xs={12} md={6} className="text-center">
@@ -44,7 +49,7 @@ function About() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </>
   );
 }
 

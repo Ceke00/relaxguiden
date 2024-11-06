@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./ErrorMessage.scss"
+import Helmet from 'react-helmet';
 
 function ErrorMessage() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Felsida Relaxguiden</title>
+      </Helmet>
       <h1>Ooops!</h1>
       <p>
         Något blev fel. Prova igen med{" "}
@@ -12,7 +16,7 @@ function ErrorMessage() {
           Relaxguidens startsida.
         </Link>
       </p>
-    </div>
+    </>
   );
 }
 

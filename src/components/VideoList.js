@@ -3,6 +3,7 @@ import { Col, Row, Modal, Button, CloseButton } from "react-bootstrap";
 import VideoCard from "./VideoCard";
 import Filter from "./Filter";
 import "./VideoList.scss";
+import { Helmet } from "react-helmet";
 
 const VideoList = ({ videos }) => {
   // State for modals and selected video
@@ -99,10 +100,16 @@ const VideoList = ({ videos }) => {
   ];
 
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Videotips Relaxguiden</title>
+      </Helmet>
       <div className="mb-5 intro">
         <h1>Videotips</h1>
-        <p>Behöver du en paus? Här kan du filtrera fram den typ av återhämtning som passar dig just nu. Relax!</p>
+        <p>
+          Behöver du en paus? Här kan du filtrera fram den typ av återhämtning
+          som passar dig just nu. Relax!
+        </p>
       </div>
       <Filter
         categories={categories}
@@ -114,14 +121,19 @@ const VideoList = ({ videos }) => {
         onResetFilters={handleResetFilters}
       />
 
-      {filteredVideos.length===0?(<p className="text-warning mt-4 fw-medium fs-5">Inga matchande viedeor hittades. Justera filtren!</p>):(
-      <Row xs={1} md={2} lg={3} className="g-4 mt-2">
-        {filteredVideos.map((video) => (
-          <Col key={video.id}>
-            <VideoCard video={video} onClick={() => openFirstModal(video)} />
-          </Col>
-        ))}
-      </Row>)}
+      {filteredVideos.length === 0 ? (
+        <p className="text-warning mt-4 fw-medium fs-5">
+          Inga matchande viedeor hittades. Justera filtren!
+        </p>
+      ) : (
+        <Row xs={1} md={2} lg={3} className="g-4 mt-2">
+          {filteredVideos.map((video) => (
+            <Col key={video.id}>
+              <VideoCard video={video} onClick={() => openFirstModal(video)} />
+            </Col>
+          ))}
+        </Row>
+      )}
 
       {/* backdrop makes click outside modal, close modal */}
       <Modal
@@ -175,7 +187,7 @@ const VideoList = ({ videos }) => {
           ></iframe>
         </Modal.Body>
       </Modal>
-    </div>
+    </>
   );
 };
 
