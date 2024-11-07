@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/relaxguiden/static/css/main.18103550.css",
-    "main.js": "/relaxguiden/static/js/main.b5f8581e.js",
+    "main.js": "/relaxguiden/static/js/main.ba4064d0.js",
     "static/js/453.7b38d585.chunk.js": "/relaxguiden/static/js/453.7b38d585.chunk.js",
     "static/media/meditation_512.webp": "/relaxguiden/static/media/meditation_512.462f59ae032578f2d0ee.webp",
     "static/media/meditation_384.webp": "/relaxguiden/static/media/meditation_384.0009e22edecc22ddebc4.webp",
@@ -10,11 +10,11 @@
     "static/media/relaxing_384.webp": "/relaxguiden/static/media/relaxing_384.142c0e231655141b9042.webp",
     "index.html": "/relaxguiden/index.html",
     "main.18103550.css.map": "/relaxguiden/static/css/main.18103550.css.map",
-    "main.b5f8581e.js.map": "/relaxguiden/static/js/main.b5f8581e.js.map",
+    "main.ba4064d0.js.map": "/relaxguiden/static/js/main.ba4064d0.js.map",
     "453.7b38d585.chunk.js.map": "/relaxguiden/static/js/453.7b38d585.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18103550.css",
-    "static/js/main.b5f8581e.js"
+    "static/js/main.ba4064d0.js"
   ]
 }
