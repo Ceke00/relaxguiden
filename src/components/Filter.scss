@@ -1,0 +1,39 @@
+.category-buttons {
+  .btn:hover {
+    background-color: var(--light) !important;
+    color: var(--dark) !important;
+  }
+  .btn.active {
+    background-color: var(--danger-subtle) !important;
+    color: var(--dark) !important;
+    &:hover {
+      background-color: inherit;
+    }
+  }
+  .btn:not(.active) {
+    background-color: transparent;
+    border-color: var(--light);
+    color: var(--light);
+  }
+
+  @media (hover: none) {
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+      background-color: inherit !important;
+      color: inherit !important;
+      border-color: inherit !important;
+    }
+
+    .btn.active {
+      background-color: var(--danger-subtle) !important;
+      color: var(--dark) !important;
+      &:hover {
+        background-color: inherit;
+      }
+      &:active {
+        background-color: var(--danger-subtle) !important;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import "./Filter.scss";
 
 const Filter = ({
   categories,
@@ -43,12 +44,8 @@ const Filter = ({
             >
               {categories.map((category) => (
                 <Button
+                  className="btn"
                   key={category.value}
-                  variant={
-                    selectedCategories.includes(category.value)
-                      ? "light"
-                      : "outline-light"
-                  }
                   active={selectedCategories.includes(category.value)}
                   onClick={() => handleCategoryChange(category.value)}
                 >

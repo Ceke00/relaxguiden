@@ -69,16 +69,19 @@ const VideoList = ({ videos }) => {
       );
     }
 
-    if (selectedTime !== "all") {
-      filtered = filtered.filter((video) => {
-        const videoLength = parseInt(video.length.split(":")[0], 10);
-        if (selectedTime === "5") return videoLength <= 5;
-        if (selectedTime === "10") return videoLength <= 10;
-        if (selectedTime === "20") return videoLength <= 20;
-        if (selectedTime === "more") return videoLength > 20;
-        return true;
-      });
-    }
+ if (selectedTime !== "all") {
+   filtered = filtered.filter((video) => {
+     const [minutes, seconds] = video.length.split(":").map(Number);
+     const videoLengthInSeconds = minutes * 60 + seconds;
+
+     if (selectedTime === "5") return videoLengthInSeconds <= 5 * 60;
+     if (selectedTime === "10") return videoLengthInSeconds <= 10 * 60;
+     if (selectedTime === "20") return videoLengthInSeconds <= 20 * 60;
+     if (selectedTime === "more") return videoLengthInSeconds > 20 * 60;
+     return true;
+   });
+ }
+
 
     if (selectedLanguage !== "all") {
       filtered = filtered.filter(

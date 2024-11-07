@@ -60,18 +60,9 @@
       "language": "en",
       "description": "Sikhism, one of the world's youngest major religions, was founded in the late 15th century in the Punjab region of South Asia by Guru Nanak Dev Ji. It is a monotheistic faith that emphasizes devotion to one God, equality of all people, and the importance of living a truthful and honest life. Sikhs follow the teachings of ten Gurus, with Guru Nanak Dev Ji being the first and Guru Gobind Singh Ji being the last. The holy scripture, Guru Granth Sahib Ji, is regarded as the eternal Guru and the ultimate spiritual guide for Sikhs."
     },
+
     {
       "id": "7",
-      "title": "Guidad avslappning vid stress",
-      "link": "https://www.youtube.com/watch?v=3U_l1-Rszhs&list=PLOgopcixVYVAlmKJFVIheRsoVS7BPpCpo",
-      "author": "Emma Öström",
-      "length": "19:42",
-      "category": "relax",
-      "language": "sv",
-      "description": "Den här guidade avslappningen kan du göra när som helst du behöver. Den hjälper dig att släppa stress, oro och spänningar i kroppen."
-    },
-    {
-      "id": "8",
       "title": "Guided Meditation - Blissful Deep Relaxation",
       "link": "https://www.youtube.com/watch?v=Jyy0ra2WcQQ",
       "author": "The Honest Guys - Meditations - Relaxation",
@@ -81,7 +72,7 @@
       "description": "This guided meditation will gently ease you into a state of blissfully deep relaxation."
     },
     {
-      "id": "9",
+      "id": "8",
       "title": "En guidad sittande avspänningsövning ",
       "link": "https://www.youtube.com/watch?v=VySXX6FA8EM",
       "author": "Gunnel Saric ",
@@ -91,7 +82,7 @@
       "description": "En guidad sittande avspänningsövning"
     },
     {
-      "id": "10",
+      "id": "9",
       "title": "20 minute yoga nidra - reset your nervous system",
       "link": "https://www.youtube.com/watch?v=9r8jXUvsi3w",
       "author": "Ally Boothroyd",
@@ -101,7 +92,7 @@
       "description": "Yoga Nidra is a guided meditation that uses a systematic method of inducing complete physical, mental and emotional relaxation. This yogic sleep technique calms the nervous system and activate the parasympathetic (relaxation, rest & digest) response. "
     },
     {
-      "id": "11",
+      "id": "10",
       "title": "Avspänning Ljusa stunder",
       "link": "https://www.youtube.com/watch?v=kcTRBSkpTTY",
       "author": "Katrin Hilding",
@@ -111,7 +102,7 @@
       "description": "En vägledd muskulär avspänning från Ljusa stunder - Katrin Hilding www.ljusastunder.se"
     },
     {
-      "id": "12",
+      "id": "11",
       "title": "Muskulär Avslappning Avspänning - Mental Träning",
       "link": "https://www.youtube.com/watch?v=ft0GKLNBMyo",
       "author": "Lars-Eric Uneståhl",
@@ -121,7 +112,7 @@
       "description": "Muskulär Avslappning - Lars-Eric Uneståhl - Avspänning - Mental Träning"
     },
     {
-      "id": "13",
+      "id": "12",
       "title": "Mental Avslappning - Avspänning - Mental Träning",
       "link": "https://www.youtube.com/watch?v=0OOLpNIA0zA",
       "author": "Lars-Eric Uneståhl",
@@ -131,7 +122,7 @@
       "description": "Mental Avslappning - Lars-Eric Uneståhl - Avspänning - Mental Träning"
     },
     {
-      "id": "14",
+      "id": "13",
       "title": "Progressiv meditation",
       "link": "https://www.youtube.com/watch?v=1MClU4CydPA",
       "author": "SDF Askim Frölunda Högsbo",
@@ -141,7 +132,7 @@
       "description": "Progressiv meditation"
     },
     {
-      "id": "15",
+      "id": "14",
       "title": "A 15 minute neurosensory exercise to pause and de-stress",
       "link": "https://www.youtube.com/watch?v=RoPOmAb108w",
       "author": "Irene Lyon",
@@ -151,7 +142,7 @@
       "description": "I recorded this sampler to give the audience a taste of what it means to be embodied from a more biological and neuro-sensory level. To become embodied from a BIOLOGICAL point of view is essential for living a life that is honest and human, imo. This is by no means the entire recipe for healing trauma and restoring nervous system health, but it is a way to start and I hope you take 15 minutes out of your busy life to give this a try. Please leave a comment below afterwards! "
     },
     {
-      "id": "16",
+      "id": "15",
       "title": "Sittande paus 7 min guidad mindfulness",
       "link": "https://www.youtube.com/watch?v=aTJ_pZfqMX4",
       "author": "Anneli Godman",
@@ -160,58 +151,9 @@
       "language": "sv",
       "description": "Träna mindfulness med Anneli Godman, utbildad i MBSR och skapare av Mental Ergonomi, som hjälper dig att använda din hjärna klokt i vardagen. Öva upp ditt uppmärksamhetskapital genom att fokusera. Här bjuder Anneli på en guidad mindfulnessövning på 7 minuter som det går lätt att göra plats för i vardagen. "
     },
+
     {
-      "id": "17",
-      "title": "Stressad (3 minuter guidad meditation för stress)",
-      "link": "https://www.youtube.com/watch?v=U8Bzvr8nkow",
-      "author": "Mindfully",
-      "length": "3:00",
-      "category": "meditation",
-      "language": "sv",
-      "description": "Meditation och mindfulness på svenska. Det här är en kort guidad meditation för stress. När du är stressad ger meditation som mest. I den här meditationen låter vi de stressiga tankarna vara för en stund, för att istället komma med vår fulla uppmärksamhet till nuet. "
-    },
-    {
-      "id": "18",
-      "title": "Medkänsla & kärlek (5 minuter guidad meditation)",
-      "link": "https://www.youtube.com/watch?v=wN2gcpz_l9E",
-      "author": "Mindfully",
-      "length": "5:00",
-      "category": "meditation",
-      "language": "sv",
-      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation för att öva du upp din förmåga att vara vänlig, kärleksfull och medkännande mot din bästa vän, dig själv och hela världen. Den här tekniken kallas även metta-meditation. "
-    },
-    {
-      "id": "19",
-      "title": "Godnatt (10 minuter guidad meditation när du ska sova)",
-      "link": "https://www.youtube.com/watch?v=vZ3mnkTex_Q",
-      "author": "Mindfully",
-      "length": "10:00",
-      "category": "meditation",
-      "language": "sv",
-      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation för innan du ska sova som är 10 minuter. Meditation kan hjälpa dig att släppa taget om det som har varit så att du kan somna fortare och vakna upp utvilad. "
-    },
-    {
-      "id": "20",
-      "title": "Fokusera (5 minuter guidad meditation)",
-      "link": "https://www.youtube.com/watch?v=xCaFVCsNS3E",
-      "author": "Mindfully",
-      "length": "5:00",
-      "category": "meditation",
-      "language": "sv",
-      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation som stärker din koncentrationsförmåga så att du kan fokusera längre och på rätt saker."
-    },
-    {
-      "id": "21",
-      "title": "Acceptans (10 minuter guidad meditation)",
-      "link": "https://www.youtube.com/watch?v=d3FXV2RaXJQ",
-      "author": "Mindfully",
-      "length": "10:00",
-      "category": "meditation",
-      "language": "sv",
-      "description": "Meditation och mindfulness på svenska. Det här är en guidad meditation som är 10 minuter. Acceptans är en förutsättning för att vi ska kunna vara närvarande. Det innebär inte att vi blir passiva, det betyder bara att vi inte är emot det som redan är. Tillåt dig själv att släppa dina förväntningar, dina krav, dina måsten och borden och bara slappna av i nuet, precis som det är. "
-    },
-    {
-      "id": "22",
+      "id": "16",
       "title": "Basal kroppskännedom liggande 1",
       "link": "https://www.youtube.com/watch?v=M0M_v-Oxoqk",
       "author": "Martina Strand",
@@ -221,7 +163,7 @@
       "description": "Inspelningarna är tänkta som ett komplement och hjälpmedel för studieledare av Ljuscirkeln eller vem som helst som vill göra övningarna på egen hand."
     },
     {
-      "id": "23",
+      "id": "17",
       "title": "Vacker Pianomusik, Vol. 3 ~ Avslappnande Musik för Studier, Sömn eller Avkoppling",
       "link": "https://www.youtube.com/watch?v=-b4BjxrIp8o",
       "author": "Peder B. Helland",
@@ -231,7 +173,7 @@
       "description": "Vacker pianomusik komponerad av Peder B. Helland. Avslappnande musik som kan användas som bakgrundsmusik för arbete, studier, meditation, sömn, läsning, koncentration, fokus, spa eller yoga."
     },
     {
-      "id": "24",
+      "id": "18",
       "title": "Porlande Blommig Bäck med Härlig Fågelsång - Avslappnande Naturljud",
       "link": "https://www.youtube.com/watch?v=EFO6LOGQ0ik",
       "author": "Northern Nature Guy",
@@ -241,7 +183,7 @@
       "description": "Porlande blommig bäck med härlig fågelsång är en avslappnande naturvideo  med gula blommor vid sidan av bäcken som sakta rinner förbi. Kan passa bra när du vill koppla av, lindra oro, fokusera, läsa, djupandas m.m."
     },
     {
-      "id": "25",
+      "id": "19",
       "title": "Nadi Shodana (växelvis andning)",
       "link": "https://www.youtube.com/watch?v=tmFmUSZAj5g",
       "author": "Yogobe",
@@ -251,7 +193,7 @@
       "description": "Nadi är de kanaler av energi som finns i vår kropp. Det finns flera nadis men de tre främsta kanalerna är Ida, Pingala och Sushumna. Dessa tre har sitt ursprung vid början av vår ryggrad, vid vårt första chakra, Ida på vänster sida, Pingala på höger och Sushumna är den centrala nadin. De reser sig via ryggraden, Sushumna strålar ut genom toppen av huvudet via vårt sista chakra. Ida och Pingala tar sig ut vi vardera näsborre. Shodana betyder därför rening. Så nadi shodana översätts ungefär till att rensa kanalerna, syftet är att syresätta kroppen och lugna andetaget vilket kan sänka stresspåslag."
     },
     {
-      "id": "26",
+      "id": "20",
       "title": "Brahmari - the humming bee breath",
       "link": "https://www.youtube.com/watch?v=nzG27n1rsus",
       "author": "Yogobe",
@@ -261,7 +203,7 @@
       "description": "Brahmari – the humming bee breath (with Eleonora Ramsby Hererra via YOGOBE). This exercise is appropriate for beginners, as there is no breath retention, an alternation between nostrils, or counting of breaths. The practitioner goes at their own pace. The sound makes it easier to give the practitioner something to focus on and they can further assess their breathing more easily by evaluating the quality and evenness of the sound.."
     },
     {
-      "id": "27",
+      "id": "21",
       "title": "SAVASANA / YOGA NIDRA I med Ulrica Norberg",
       "link": "https://www.youtube.com/watch?v=2zMshE5LK7w",
       "author": "Yogobe",
