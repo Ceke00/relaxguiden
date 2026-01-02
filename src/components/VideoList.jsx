@@ -69,19 +69,18 @@ const VideoList = ({ videos }) => {
       );
     }
 
- if (selectedTime !== "all") {
-   filtered = filtered.filter((video) => {
-     const [minutes, seconds] = video.length.split(":").map(Number);
-     const videoLengthInSeconds = minutes * 60 + seconds;
+    if (selectedTime !== "all") {
+      filtered = filtered.filter((video) => {
+        const [minutes, seconds] = video.length.split(":").map(Number);
+        const videoLengthInSeconds = minutes * 60 + seconds;
 
-     if (selectedTime === "5") return videoLengthInSeconds <= 5 * 60;
-     if (selectedTime === "10") return videoLengthInSeconds <= 10 * 60;
-     if (selectedTime === "20") return videoLengthInSeconds <= 20 * 60;
-     if (selectedTime === "more") return videoLengthInSeconds > 20 * 60;
-     return true;
-   });
- }
-
+        if (selectedTime === "5") return videoLengthInSeconds <= 5 * 60;
+        if (selectedTime === "10") return videoLengthInSeconds <= 10 * 60;
+        if (selectedTime === "20") return videoLengthInSeconds <= 20 * 60;
+        if (selectedTime === "more") return videoLengthInSeconds > 20 * 60;
+        return true;
+      });
+    }
 
     if (selectedLanguage !== "all") {
       filtered = filtered.filter(
@@ -104,12 +103,14 @@ const VideoList = ({ videos }) => {
     { value: "en", label: "Engelska" },
   ];
 
+
+
   return (
     <>
       <Helmet>
         <title>Videotips Relaxguiden</title>
       </Helmet>
-      <div className="mb-5 intro">
+      <div className="mb-5 intro" id="main-content" tabIndex="-1">
         <h1>Videotips</h1>
         <p>
           Behöver du en paus? Här kan du filtrera fram den typ av återhämtning

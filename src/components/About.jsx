@@ -11,7 +11,7 @@ function About() {
       <Helmet>
         <title>Om Relaxguiden</title>
       </Helmet>
-      <Container>
+      <Container id="main-content" tabIndex="-1">
         <Row className="align-items-center gap-3">
           <Col xs={12} md={6} className="text-center">
             <picture>
