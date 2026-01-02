@@ -1,65 +1,47 @@
-import React, { useState, useEffect } from "react";
-import { Col, Row, Modal, Button, CloseButton } from "react-bootstrap";
+import React, { useState, useEffect, useRef } from "react";
+import { Col, Row, Button } from "react-bootstrap";
+import * as Dialog from "@radix-ui/react-dialog";
 import VideoCard from "./VideoCard";
 import Filter from "./Filter";
 import "./VideoList.scss";
 import { Helmet } from "react-helmet";
+import CloseIcon from "../icons/CloseIcon";
 
 const VideoList = ({ videos }) => {
-  // State for modals and selected video
-  const [showFirstModal, setShowFirstModal] = useState(false);
-  const [showSecondModal, setShowSecondModal] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [showInfoModal, setShowInfoModal] = useState(false);
+  const [showVideoModal, setShowVideoModal] = useState(false);
 
-  // State for filters
   const [filteredVideos, setFilteredVideos] = useState(videos);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedTime, setSelectedTime] = useState("all");
   const [selectedLanguage, setSelectedLanguage] = useState("all");
 
-  //Selects video and opens first modal
-  const openFirstModal = (video) => {
+  const lastOpenerRef = useRef(null);
+
+  const handleOpenInfo = (video) => (event) => {
     setSelectedVideo(video);
-    setShowFirstModal(true);
-  };
-  //Closing first modal
-  const closeFirstModal = () => {
-    setShowFirstModal(false);
-  };
-  //Closes first modal and opens second modal
-  const openSecondModal = () => {
-    setShowFirstModal(false);
-    setShowSecondModal(true);
-  };
-  //Closing second modal
-  const closeSecondModal = () => {
-    setShowSecondModal(false);
+    lastOpenerRef.current = event.currentTarget;
+    setShowInfoModal(true);
   };
 
-  // Handle filter changes
-  const handleFilterChange = (type, value) => {
-    //If category already selected->now deselected
-    if (type === "categories") {
-      setSelectedCategories((prev) =>
-        prev.includes(value)
-          ? prev.filter((cat) => cat !== value)
-          : [...prev, value]
-      );
-    } else if (type === "time") {
-      setSelectedTime(value);
-    } else if (type === "language") {
-      setSelectedLanguage(value);
+  const openVideoModal = () => {
+    setShowInfoModal(false);
+    setShowVideoModal(true);
+  };
+
+  const closeVideoModal = () => {
+    setShowVideoModal(false);
+  };
+
+  // Return focus to last opener when modals close
+  useEffect(() => {
+    if (!showInfoModal && !showVideoModal && lastOpenerRef.current) {
+      lastOpenerRef.current.focus();
     }
-  };
+  }, [showInfoModal, showVideoModal]);
 
-  // Reset filters
-  const handleResetFilters = () => {
-    setSelectedCategories([]);
-    setSelectedTime("all");
-    setSelectedLanguage("all");
-  };
-
-  // Filter videos based on selected filters, updates on every change in the filter
+  // Filtering logic
   useEffect(() => {
     let filtered = videos;
 
@@ -72,12 +54,12 @@ const VideoList = ({ videos }) => {
     if (selectedTime !== "all") {
       filtered = filtered.filter((video) => {
         const [minutes, seconds] = video.length.split(":").map(Number);
-        const videoLengthInSeconds = minutes * 60 + seconds;
+        const total = minutes * 60 + seconds;
 
-        if (selectedTime === "5") return videoLengthInSeconds <= 5 * 60;
-        if (selectedTime === "10") return videoLengthInSeconds <= 10 * 60;
-        if (selectedTime === "20") return videoLengthInSeconds <= 20 * 60;
-        if (selectedTime === "more") return videoLengthInSeconds > 20 * 60;
+        if (selectedTime === "5") return total <= 5 * 60;
+        if (selectedTime === "10") return total <= 10 * 60;
+        if (selectedTime === "20") return total <= 20 * 60;
+        if (selectedTime === "more") return total > 20 * 60;
         return true;
       });
     }
@@ -87,7 +69,7 @@ const VideoList = ({ videos }) => {
         (video) => video.language === selectedLanguage
       );
     }
-    //saving new list of filtered videos
+
     setFilteredVideos(filtered);
   }, [videos, selectedCategories, selectedTime, selectedLanguage]);
 
@@ -103,13 +85,12 @@ const VideoList = ({ videos }) => {
     { value: "en", label: "Engelska" },
   ];
 
-
-
   return (
     <>
       <Helmet>
         <title>Videotips Relaxguiden</title>
       </Helmet>
+
       <div className="mb-5 intro" id="main-content" tabIndex="-1">
         <h1>Videotips</h1>
         <p>
@@ -117,82 +98,135 @@ const VideoList = ({ videos }) => {
           som passar dig just nu. Relax!
         </p>
       </div>
+
       <Filter
         categories={categories}
         languages={languages}
         selectedCategories={selectedCategories}
         selectedTime={selectedTime}
         selectedLanguage={selectedLanguage}
-        onFilterChange={handleFilterChange}
-        onResetFilters={handleResetFilters}
+        onFilterChange={(type, value) => {
+          if (type === "categories") {
+            setSelectedCategories((prev) =>
+              prev.includes(value)
+                ? prev.filter((c) => c !== value)
+                : [...prev, value]
+            );
+          } else if (type === "time") {
+            setSelectedTime(value);
+          } else if (type === "language") {
+            setSelectedLanguage(value);
+          }
+        }}
+        onResetFilters={() => {
+          setSelectedCategories([]);
+          setSelectedTime("all");
+          setSelectedLanguage("all");
+        }}
       />
+      <div aria-live="polite" className="visually-hidden">
+        {filteredVideos.length === 0
+          ? "Inga matchande videor hittades. Justera filtren!"
+          : `${filteredVideos.length} videor hittades.`}
+      </div>
 
       {filteredVideos.length === 0 ? (
         <p className="text-warning mt-4 fw-medium fs-5">
-          Inga matchande viedeor hittades. Justera filtren!
+          Inga matchande videor hittades. Justera filtren!
         </p>
       ) : (
         <Row xs={1} md={2} lg={3} className="g-4 mt-2">
           {filteredVideos.map((video) => (
             <Col key={video.id}>
-              <VideoCard video={video} onClick={() => openFirstModal(video)} />
+              <button
+                className="p-0 border-0 bg-transparent w-100 h-100 button-focus btn"
+                lang={video.language}
+                onClick={handleOpenInfo(video)}
+              >
+                <VideoCard video={video} />
+              </button>
             </Col>
           ))}
         </Row>
       )}
 
-      {/* backdrop makes click outside modal, close modal */}
-      <Modal
-        show={showFirstModal}
-        onHide={closeFirstModal}
-        backdrop={true}
-        keyboard={true}
-      >
-        <Modal.Header>
-          <Modal.Title>{selectedVideo?.title}</Modal.Title>
-          <CloseButton
-            onClick={closeFirstModal}
-            variant="white"
-            className="button-focus"
-          />
-        </Modal.Header>
-        <Modal.Body>
-          <p>Längd: {selectedVideo?.length}</p>
-          <p>{selectedVideo?.description}</p>
-          <Button onClick={openSecondModal} className="button-focus">
-            Se video
-          </Button>
-        </Modal.Body>
-      </Modal>
+      {/* info dialog */}
+      <Dialog.Root open={showInfoModal} onOpenChange={setShowInfoModal}>
+        <Dialog.Portal>
+          <Dialog.Overlay className="rg-dialog-overlay" />
 
-      <Modal
-        show={showSecondModal}
-        onHide={closeSecondModal}
-        size="lg"
-        centered
-        backdrop={true}
-        keyboard={true}
-      >
-        <Modal.Header>
-          <Modal.Title>{selectedVideo?.title}</Modal.Title>
-          <CloseButton
-            onClick={closeSecondModal}
-            variant="white"
-            className="button-focus"
-          />
-        </Modal.Header>
-        <Modal.Body>
-          <iframe
-            width="100%"
-            height="500"
-            src={selectedVideo?.link.replace("watch?v=", "embed/")}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title={`Videospelare för ${selectedVideo?.title}`}
-          ></iframe>
-        </Modal.Body>
-      </Modal>
+          <Dialog.Content
+            className="rg-dialog-content"
+            onCloseAutoFocus={(e) => {
+              e.preventDefault();
+              lastOpenerRef.current?.focus();
+            }}
+          >
+            <Dialog.Title
+              className="rg-dialog-title"
+              lang={selectedVideo?.language === "en" ? "en" : "sv"}
+            >
+              {selectedVideo?.title}
+            </Dialog.Title>
+
+            <Dialog.Description className="rg-dialog-description">
+              <p>Längd: {selectedVideo?.length}</p>
+              <p lang={selectedVideo?.language === "en" ? "en" : "sv"}>
+                {selectedVideo?.description}
+              </p>
+            </Dialog.Description>
+
+            <Button onClick={openVideoModal} className="button-focus">
+              Starta videon
+            </Button>
+            <Dialog.Close asChild>
+              <button
+                className="rg-dialog-close button-focus"
+                aria-label="Stäng dialog"
+              >
+                <CloseIcon />
+              </button>
+            </Dialog.Close>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
+
+      {/* video dialog */}
+      <Dialog.Root open={showVideoModal} onOpenChange={setShowVideoModal}>
+        <Dialog.Portal>
+          <Dialog.Overlay className="rg-dialog-overlay" />
+          <Dialog.Content
+            className="rg-dialog-content rg-dialog-video"
+            onCloseAutoFocus={(e) => {
+              e.preventDefault();
+              lastOpenerRef.current?.focus();
+            }}
+          >
+            <Dialog.Title
+              className="rg-dialog-title"
+              lang={selectedVideo?.language === "en" ? "en" : "sv"}
+            >
+              {selectedVideo?.title}
+            </Dialog.Title>
+            <div className="video-wrapper">
+              <iframe
+                src={selectedVideo?.link.replace("watch?v=", "embed/")}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title={`Videospelare för ${selectedVideo?.title}`}
+              ></iframe>
+            </div>
+            <Dialog.Close asChild>
+              <button
+                className="rg-dialog-close button-focus"
+                aria-label="Stäng dialog"
+              >
+                <CloseIcon />
+              </button>
+            </Dialog.Close>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </>
   );
 };

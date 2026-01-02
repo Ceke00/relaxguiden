@@ -1,14 +1,13 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { PiFlowerLotus } from "react-icons/pi";
 import { GrYoga } from "react-icons/gr";
 import { TbUserPause } from "react-icons/tb";
-import "./VideoCard.scss";
 import { GiMeditation } from "react-icons/gi";
 import { IoMdMusicalNotes } from "react-icons/io";
+import "./VideoCard.scss";
 
-const VideoCard = ({ video, onClick }) => {
-  //get icon according to category
+const VideoCard = ({ video }) => {
   const getCategoryIcon = (category) => {
     switch (category) {
       case "music":
@@ -23,7 +22,7 @@ const VideoCard = ({ video, onClick }) => {
         return <TbUserPause className="category-icon" />;
     }
   };
-  //get color according to category
+
   const getCategoryColor = (category) => {
     switch (category) {
       case "music":
@@ -40,30 +39,26 @@ const VideoCard = ({ video, onClick }) => {
   };
 
   return (
-    <Button
-      className="p-0 border-0 bg-transparent w-100 h-100 button-focus"
-      onClick={onClick}
-    >
-      <Card className="h-100 cursor-pointer video-card rounded-4 shadow-sm">
-        <div
-          className="category-icon-container d-flex justify-content-center align-items-center rounded-top-4"
-          style={{
-            backgroundColor: getCategoryColor(video.category),
-          }}
-        >
-          {getCategoryIcon(video.category)}
-        </div>
-        <Card.Body className="text-left d-flex flex-column">
-          <Card.Title>{video.title}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            {video.author}
-          </Card.Subtitle>
-          <Card.Text className="fs-6 mt-auto">
-            Längd: {video.length} minuter
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Button>
+    <Card className="h-100 cursor-pointer video-card rounded-4 shadow-sm">
+      <div
+        className="category-icon-container d-flex justify-content-center align-items-center rounded-top-4"
+        style={{
+          backgroundColor: getCategoryColor(video.category),
+        }}
+      >
+        {getCategoryIcon(video.category)}
+      </div>
+
+      <Card.Body className="text-left d-flex flex-column">
+        <Card.Title>{video.title}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">
+          {video.author}
+        </Card.Subtitle>
+        <Card.Text className="fs-6 mt-auto">
+          Längd: {video.length} minuter
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 
