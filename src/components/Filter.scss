@@ -19,6 +19,7 @@
   @media (hover: none) {
     .btn:hover,
     .btn:focus,
+    .btn:focus-visible,
     .btn:active {
       background-color: inherit !important;
       color: inherit !important;
