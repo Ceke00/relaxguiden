@@ -9,7 +9,24 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Startsida Relaxguiden</title>
+        <title>Relaxguiden | När du behöver en paus</title>
+        <meta
+          name="description"
+          content="Relaxguiden hjälper dig hitta rätt avslappningsövningar och meditationstekniker för ett lugnare vardagsliv. Slipp reklam och hitta rätt YouTube-klipp med hjälp av våra filterfunktioner."
+        />
+        <meta
+          property="og:title"
+          content="Relaxguiden | När du behöver en paus"
+        />
+        <meta
+          property="og:description"
+          content="Relaxguiden hjälper dig hitta rätt avslappningsövningar och meditationstekniker för ett lugnare vardagsliv."
+        />
+        <meta
+          property="og:image"
+          content="https://relaxguiden.vercel.app/og-image.jpg"
+        />
+        <link rel="canonical" href="https://relaxguiden.vercel.app/" />
       </Helmet>
       <Container id="main-content" tabIndex="-1">
         <Row className="align-items-center gap-3">

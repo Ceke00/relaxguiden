@@ -9,7 +9,24 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>Om Relaxguiden</title>
+        <title>Om Relaxguiden | Vi hjälper dig att må bra</title>
+        <meta
+          name="description"
+          content="Vi vill hjälpa dig att hitta rätt avslappningsövningar så att du kan varva ner i vardagen. Relaxguiden är en gratis resurs som filtrerar utvalda YouTube-videor efter kategori, längd och språk."
+        />
+        <meta
+          property="og:title"
+          content="Om Relaxguiden | Vi hjälper dig att må bra"
+        />
+        <meta
+          property="og:description"
+          content="Vi vill hjälpa dig att hitta rätt avslappningsövningar så att du kan varva ner i vardagen. Relaxguiden är en gratis resurs som filtrerar utvalda YouTube-videor efter kategori, längd och språk."
+        />
+        <meta
+          property="og:image"
+          content="https://relaxguiden.vercel.app/og-image.jpg"
+        />
+        <link rel="canonical" href="https://relaxguiden.vercel.app/about" />
       </Helmet>
       <Container id="main-content" tabIndex="-1">
         <Row className="align-items-center gap-3">

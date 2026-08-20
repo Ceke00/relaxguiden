@@ -88,7 +88,24 @@ const VideoList = ({ videos }) => {
   return (
     <>
       <Helmet>
-        <title>Videotips Relaxguiden</title>
+        <title>Videotips för avslappning | Relaxguiden</title>
+        <meta
+          name="description"
+          content="En samling videotips för meditation, andningsövningar och avslappning. Filtrera YouTube-videor efter kategori, längd och språk för att hitta rätt övning för dig."
+        />
+        <meta
+          property="og:title"
+          content="Videotips för avslappning | Relaxguiden"
+        />
+        <meta
+          property="og:description"
+          content="En samling videotips för meditation, andningsövningar och avslappning. Filtrera YouTube-videor efter kategori, längd och språk för att hitta rätt övning för dig."
+        />
+        <meta
+          property="og:image"
+          content="https://relaxguiden.vercel.app/og-image.jpg"
+        />
+        <link rel="canonical" href="https://relaxguiden.vercel.app/videotips" />
       </Helmet>
 
       <div className="mb-5 intro" id="main-content" tabIndex="-1">
@@ -110,7 +127,7 @@ const VideoList = ({ videos }) => {
             setSelectedCategories((prev) =>
               prev.includes(value)
                 ? prev.filter((c) => c !== value)
-                : [...prev, value]
+                : [...prev, value],
             );
           } else if (type === "time") {
             setSelectedTime(value);
